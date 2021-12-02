@@ -8,4 +8,8 @@
     <PackageReference Include="X.PagedList" Version="8.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TaskApix.Data\TaskApix.Data.csproj" />
+  </ItemGroup>
+
 </Project>

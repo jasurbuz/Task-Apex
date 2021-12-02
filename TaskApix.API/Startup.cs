@@ -1,18 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
 using TaskApix.Data.Context;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using TaskApix.Services.IRepository;
+using TaskApix.Services.Repository;
 
 namespace TaskApix.API
 {
@@ -30,12 +25,18 @@ namespace TaskApix.API
         {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnectionString")));
-
+            
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            
+            services.AddAutoMapper(typeof(Startup));
+            
             services.AddControllers();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TaskApix.API", Version = "v1" });
             });
+            
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll", builder =>
@@ -43,6 +44,7 @@ namespace TaskApix.API
                     .AllowAnyMethod()
                     .AllowAnyHeader());
             });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

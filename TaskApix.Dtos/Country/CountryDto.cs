@@ -1,13 +1,12 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaskApix.Data.Models
+namespace TaskApix.Dtos.CountryDto
 {
-    public class Country
+    public class CountryDto
     {
         public long Id { get; set; }
         public string Name { get; set; }
@@ -16,9 +15,5 @@ namespace TaskApix.Data.Models
         public bool IsSchengen { get; set; } = false;
         public DateTime StartDate { get; set; }
         public DateTime FinishDate { get; set; }
-
-        #region
-        public ICollection<Region> Regions { get; set; }
-        #endregion
     }
 }
