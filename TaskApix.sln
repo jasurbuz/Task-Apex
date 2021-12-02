@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.API", "TaskApix.AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.Data", "TaskApix.Data\TaskApix.Data.csproj", "{FED63731-AB49-40AB-9BD5-3345BF179440}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.Services", "TaskApix.Services\TaskApix.Services.csproj", "{CD869BF2-9DCF-4681-805B-EA421D14FC54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.Dtos", "TaskApix.Dtos\TaskApix.Dtos.csproj", "{F1F59504-FAF1-46BF-9144-ACD45934A820}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FED63731-AB49-40AB-9BD5-3345BF179440}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FED63731-AB49-40AB-9BD5-3345BF179440}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FED63731-AB49-40AB-9BD5-3345BF179440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD869BF2-9DCF-4681-805B-EA421D14FC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD869BF2-9DCF-4681-805B-EA421D14FC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD869BF2-9DCF-4681-805B-EA421D14FC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD869BF2-9DCF-4681-805B-EA421D14FC54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F59504-FAF1-46BF-9144-ACD45934A820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F59504-FAF1-46BF-9144-ACD45934A820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F59504-FAF1-46BF-9144-ACD45934A820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F59504-FAF1-46BF-9144-ACD45934A820}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
