@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.API", "TaskApix.API\TaskApix.API.csproj", "{3FD33BCE-4F9A-42CE-B4D4-443B5F358395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskApix.API", "TaskApix.API\TaskApix.API.csproj", "{3FD33BCE-4F9A-42CE-B4D4-443B5F358395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.Data", "TaskApix.Data\TaskApix.Data.csproj", "{FED63731-AB49-40AB-9BD5-3345BF179440}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskApix.Data", "TaskApix.Data\TaskApix.Data.csproj", "{FED63731-AB49-40AB-9BD5-3345BF179440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.Services", "TaskApix.Services\TaskApix.Services.csproj", "{CD869BF2-9DCF-4681-805B-EA421D14FC54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskApix.Services", "TaskApix.Services\TaskApix.Services.csproj", "{CD869BF2-9DCF-4681-805B-EA421D14FC54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.Dtos", "TaskApix.Dtos\TaskApix.Dtos.csproj", "{F1F59504-FAF1-46BF-9144-ACD45934A820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskApix.Dtos", "TaskApix.Dtos\TaskApix.Dtos.csproj", "{F1F59504-FAF1-46BF-9144-ACD45934A820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApix.MVC", "TaskApix.MVC\TaskApix.MVC.csproj", "{BBADB78A-716D-42BF-AF00-F69ED5D06A41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F1F59504-FAF1-46BF-9144-ACD45934A820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1F59504-FAF1-46BF-9144-ACD45934A820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1F59504-FAF1-46BF-9144-ACD45934A820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBADB78A-716D-42BF-AF00-F69ED5D06A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBADB78A-716D-42BF-AF00-F69ED5D06A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBADB78A-716D-42BF-AF00-F69ED5D06A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBADB78A-716D-42BF-AF00-F69ED5D06A41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
