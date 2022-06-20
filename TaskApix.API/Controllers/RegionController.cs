@@ -90,8 +90,8 @@ namespace TaskApix.API.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> DeleteRegion([FromBody] long Id)
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> DeleteRegion(long Id)
         {
             var region = await _unitOfWork.Regions.Get(p => p.Id == Id);
             if (region is null)
