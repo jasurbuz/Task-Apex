@@ -87,8 +87,8 @@ namespace TaskApix.API.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> DeleteCountry([FromBody] long Id)
+        [HttpDelete("{Id})]
+        public async Task<IActionResult> DeleteCountry(long Id)
         {
             var country = await _unitOfWork.Countries.Get(p => p.Id == Id);
             if (country is null)
